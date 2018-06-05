@@ -1,0 +1,150 @@
+body {
+    font-family:"crimsontext-roman","Cochin", Georgia, Times, "Times New Roman", serif;
+    transition: background-color .5s;
+}
+
+@keyframes example {
+    0%   {background-color: rgb(163, 228, 228);}
+    25%  {background-color: rgb(172, 223, 216);}
+    50%  {background-color: rgb(186, 211, 211);}
+    100% {background-color: rgb(209, 209, 209);}
+}
+
+.purpose {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top:20px;
+    width:1200px;
+    margin-left:70px;
+}
+
+h1{
+    font-family:"Tahoma", Helvetica, arial, sans-serif;
+    font-size: 35px;
+    background-color: rgb(143, 209, 204);
+    width: 40px;
+}
+
+h2{
+    font-family:"Tahoma", Helvetica, arial, sans-serif;
+    font-size: 50px;
+    width: 40px;
+    padding-top:30px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    color:rgb(143, 209, 204);
+}
+
+hr{
+    width:1000px;
+}
+
+p{
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: .2px;
+    margin: 0 0 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery{
+    margin-left:50px;
+    display:flex;
+    margin:100px;
+    margin-top:0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+figure{
+    width: 200px;
+    margin: 8px 0;
+    border: 1px solid #777;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figure img{
+    width: 100%;
+}
+
+figure figcaption{
+    text-align: center;
+    padding: 8px 4px;
+    font-variant: uppercase;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.column {
+    float: left;
+    padding-top: 10px;
+}
+
+.left {
+     width: 30%;
+     
+}
+
+.right {
+    width: 70%;
+    margin-top: 40px;
+    padding-left: 175px;
+    padding-right: 100px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main{
+    padding: 20px;
+    position: absolute;
+    top:0;
+    left:0;
+}
